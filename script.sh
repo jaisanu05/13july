@@ -36,8 +36,10 @@ then
 elif [ $d -ge 13 -a $d -le 19 ]
 then
 	echo "teenager"
-
-elif [ $d -ge 20 ]
+elif [ $d -ge 20 -a $d -le 60 ]
 then
 	echo "Adult"
+elif [ $d -ge 60 ]
+then
+	echo "Oldage"
 fi
